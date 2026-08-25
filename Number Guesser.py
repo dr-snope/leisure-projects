@@ -1,9 +1,9 @@
 import random
-num = random.randint(1,100)
 running = True
 guesses = 1
 print("Welcome to the number guessing game!")
 print("I have selected a number between 1 and 100. Can you guess it?")
+num = random.randint(1,100)
 while running:
     guess = int(input("Enter your guess: "))
     if guess < 1 or guess > 100:
@@ -18,6 +18,7 @@ while running:
     else:
         print("Congratulations! You guessed the number!")
         print(f"Number of guesses: {guesses}")
+        num = random.randint(1,100)
         guesses = 1
         play_again = input("Would you like to quit (press q): ")
         if play_again.lower() == "q":
