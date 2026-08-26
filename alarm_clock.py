@@ -9,7 +9,7 @@ def set_alarm():
     pygame.mixer.init()
     
     try:
-        pygame.mixer.music.load("Alarm.mp3")
+        pygame.mixer.music.load("Alarm.mp3") #make sure to name your mp3 file as Alaram and save it in the same folder
     except pygame.error as e:
         print(f"Error loading sound file: {e}")
         return
